@@ -26,7 +26,7 @@ class HW_Architecture_ViperTests: XCTestCase {
         super.tearDown()
     }
     
-    func testThatCheckOnErrorLoadedData() {
+    func testThatCheckLoadedDataIsNotNill() {
         // arrange
         let promise = expectation(description: "Completion get data")
         let data = Data(base64Encoded: "267454238428")
